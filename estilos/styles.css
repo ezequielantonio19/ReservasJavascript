@@ -1,1 +1,8 @@
-body {background-color: blue;}
+body {background-color: rgb(161, 161, 241);}
+
+header{ display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:black
+}
