@@ -1,30 +1,24 @@
-/*const agregarNombre = (evt) => {
-  evt.preventDefault ()
-const nombre1 = document.querySelector ('#Inicio').value
-}*/
+const saludo = "Bienvenid@ "
+
+let nombre = prompt("Ingrese su nombre")
+
+console.log(saludo + nombre)
+alert(saludo + nombre)
 
 
-const alertaForm = document.querySelector("#alerta-form");
-const alertaInput = document.querySelector("#alerta-input");
+let actual = 2023;
+let nacimiento = prompt("Ingrese su año de nacimiento:")
 
-alertaForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  alert('Bienvenid@ ' + alertaInput.value);
-  console.log (alertaInput.value)
-});
+let edad = actual - nacimiento;
+
+console.log(edad);
+
+let pais = prompt("País de orígen?")
+
+let ciudad = prompt("Ciudad?")
 
 
-const nacimiento = document.querySelector("#fechaNac")
-const edad = document.querySelector("#nacimiento");
 
-nacimiento.addEventListener("submit", (e) => {
-  e.preventDefault();
-  
-  console.log(edad.value);
-
-});
-
-localStorage.setItem ("DatoEdad" , edad);
 
 if (edad >= 18) {
   alert("Podes ingresar al sitio"); console.log("Ingresa al sitio")
@@ -100,27 +94,3 @@ if (edad >= 18) {
 }
 
 else { alert("Acceso denegado +18"); console.log("Acceso denegado") }
-
-
-
-//function mostrarAlerta() {alert ("Bienvenid@ " + nombre)} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
