@@ -22,11 +22,30 @@ nacimiento.addEventListener("submit", (e) => {
   
   console.log(edad.value);
 
+  if (edad >= 18) {
+    alert("Podes ingresar al sitio"); console.log("Ingresa al sitio")}
+
+
+else { alert("Acceso denegado +18"); console.log("Acceso denegado") }
+  
+
 });
+const edadJSON = JSON.stringify(edad);
 
-localStorage.setItem ("DatoEdad" , edad);
+localStorage.setItem ("DatoEdad" , edadJSON);
 
-if (edad >= 18) {
+
+
+const pasajeros = document.querySelector ('#pasajeros')
+const cantidad = document.querySelector ('#cantidadPasajeros')
+
+pasajeros.addEventListener ("submit" , (e) =>{
+  e.preventDefault();
+  if (cantidad <= 2) { alert("Solicitó habitación simple"); }
+  else if (cantidad > 2 && cantidad <= 4) { alert("Solicitó habitación doble"); }
+})
+
+/*if (edad >= 18) {
   alert("Podes ingresar al sitio"); console.log("Ingresa al sitio")
 
 
@@ -99,7 +118,7 @@ if (edad >= 18) {
   
 }
 
-else { alert("Acceso denegado +18"); console.log("Acceso denegado") }
+else { alert("Acceso denegado +18"); console.log("Acceso denegado") }*/
 
 
 
