@@ -6,3 +6,11 @@ header{ display: flex;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:black
 }
+
+.confirmar {
+    display: none;
+}
+
+.confirmar2{
+    display: flex
+}

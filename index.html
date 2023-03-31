@@ -1,52 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+  
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/styles.css">
-    <title>Document</title>
-</head>
-
-<body>
-
-
-    <header>Reserva de habitacion de hotel</header>
-
-    <div class="form-group">
-        <ul class="lista">
-            <h2>Ingrese su nombre</h2>
-            <form action="" id="alerta-form" >
-                <input type="text" id="alerta-input" >
-                <input type="submit" id="alerta-submit"  value="Ingresar dato">
-            </form>
-            <h2>Ingrese su edad
-            </h2>
-            <form action="" id="fechaNac" >
-                <input type="text" id="nacimiento" >
-                <input type="submit" id="alerta-submit"  value="Ingresar dato">
-            </form>
-        </ul>
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="./css/style.css">
+          
+      <title>Formulario en JavaScript</title>
+    </head>
+    <body>
+      <header>RESERVA DE HABITACION EN HOTEL "RO"</header>
+      <div class="general">
+      <form class="formulario">
+        <div class="grupoForm">
+        <label for="input-nombre">Nombre</label>
+        <input type="text"class="input-name" id="input-nombre" required>
     </div>
 
-    <h2>Ingrese cantidad de pasajeros</h2>
-            <form action="" id="pasajeros" >
-                <input type="text" id="cantidadPasajeros" >
-                <input type="submit" id="ingresoPasajeros"  value="Ingresar dato">
-            </form>
-    <!--<form id="Formulario">
-    <label for="Inicio">Ingrese su nombre</label>
-    <div>
-    <textarea  id="Inicio" ></textarea>
-</div>
-    <div>
-    <input type="submit" id="alertaSubmit" value="Ingresar Dato">
-</div>
-</form>
--->
+    <div class="grupoForm">
+        <label for="input-apellido">Apellido</label>
+        <input type="text"class="input" id="input-apellido" required>
+    </div>
 
-    <script src="./js/main.js"></script>
-</body>
+    <div class="grupoForm">
+        <label for="input-huesped">Cantidad de huéspedes</label>
+        <input type="number"class="input" id="input-huesped" required>
+    </div>
 
-</html>
+    <div class="grupoForm">
+        <label for="input-fechaI">Fecha de ingreso</label>
+        <input type="date"class="input" id="input-fechaI" required>
+    </div>
+
+    <div class="grupoForm">
+        <label for="input-fechaS">Fecha de salida</label>
+        <input type="date"class="input" id="input-fechaS" required>
+    </div>
+      
+      <div class="grupoForm">
+        <button class="button" type="submit">Confirmar</button>
+      </form>
+
+        <section id="respuesta" class="respuesta confirmar" >
+          <div id="respNombre">
+      
+          </div>
+      
+          <div id="respApellido">
+      
+          </div>
+      
+          <div id="respHuesped">
+      
+          </div>
+      
+          <div id="respFechaI">
+      
+          </div>
+      
+          <div id="respFechaS">
+      
+          </div>
+      
+        </div> 
+        </section>
+  
+
+      </div>
+
+<script src="/js/main.js"></script>
+    </body>
+    </html>
