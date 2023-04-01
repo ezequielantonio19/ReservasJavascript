@@ -16,7 +16,8 @@ const respuesta = document.querySelector (".respuesta")
 
 
 inputName.addEventListener("input",() => {
-    respName.innerText = inputName.value;
+    respName.innerText = "Bienvenid@ " + inputName.value;
+
 });
 
 inputApellido.addEventListener("input",() => {
@@ -24,21 +25,21 @@ inputApellido.addEventListener("input",() => {
 });
 
 inputHuesped.addEventListener("input",() => {
-    respHuesped.innerText = inputHuesped.value;
+    respHuesped.innerText = "Usted solicitó ingreso para " + inputHuesped.value + " huesped/es";
 });
 
 inputFechaI.addEventListener("input", () => {
     const fecha = new Date(inputFechaI.value) ;
-    respFechaI.innerHTML = fecha.toLocaleDateString();
+    respFechaI.innerHTML = "Ingresando el día " + fecha.toLocaleDateString();
   });
 
   inputFechaS.addEventListener("input", () => {
     const fecha = new Date(inputFechaS.value) ;
-    respFechaS.innerHTML = fecha.toLocaleDateString();
+    respFechaS.innerHTML = "Y solicitando su salida el día " + fecha.toLocaleDateString();
   });
 
   form.addEventListener("submit", (evt) => {
     evt.preventDefault ();
    form.classList.add("confirmar");
-   respuesta.classList.add("confirmar2");
+   //respuesta.classList.add("confirmar2");
   })
