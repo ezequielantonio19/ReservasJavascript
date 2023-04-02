@@ -11,7 +11,11 @@
       <title>Formulario en JavaScript</title>
     </head>
     <body>
-      <header>RESERVA DE HABITACION EN HOTEL "RO"</header>
+      <header>RESERVA DE HABITACION EN HOTELES "RO"</header>
+
+      <div class="descripcion">
+        <h2>Reserva tu habitación en nustros hoteles Ro, en tu ciudad favorita</h2>
+      </div>
       <div class="general">
       <form class="formulario">
         <div class="grupoForm">
@@ -30,6 +34,23 @@
     </div>
 
     <div class="grupoForm">
+        <label for="input-ciudad">En que ciudad deseas alojarte?</label>
+        <select for= "ciudad" name="ciudad" id="input-ciudad" required>
+            <option value="Amsterdam">Amsterdam</option>
+            <option value="Madrid">Bariloche</option>
+            <option value="Berlin">Berlin</option>
+            <option value="Paris">Buenos Aires</option>
+            <option value="completa">Chicago</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Paris">París</option>
+            <option value="New YorK">New YorK</option>
+            <option value="Roma">Roma</option>
+        </select>
+    </div>
+
+    
+
+    <div class="grupoForm">
         <label for="input-fechaI">Fecha de ingreso</label>
         <input type="date"class="input" id="input-fechaI" required>
     </div>
@@ -39,11 +60,16 @@
         <input type="date"class="input" id="input-fechaS" required>
     </div>
       
+   
+
+
       <div class="grupoForm">
         <button class="button" type="submit">Confirmar</button>
       </form>
 
-        <section id="respuesta" class="respuesta" >
+    </div>
+
+        <section id="respuesta" class="respuesta confirmar" >
           <div id="respNombre">
       
           </div>
@@ -64,11 +90,29 @@
       
           </div>
       
+          <div class="opcion">
+            <label for="input-pension">Ahora elija el tipo de pensión</label>
+        <select for="input-opcion" name="opciones" id="input-pension" required>
+            <option value="desayuno">Sólo desayuno</option>
+            <option value="media">Media pensión</option>
+            <option value="completa">Pensión completa</option>
+        </select>
+        </div>
+
+        <div class="clima">
+            <label for="ciudad">Indique destino para obtener clima</label>
+            <input type="text" id="ciudad">
+            <button id="btn">Consultar clima en destino</button>
+
+            <output><p id="temperatura"></p></output>
+        </div>
         </div> 
+
+        
         </section>
   
 
-      </div>
+      
 
 <script src="/js/main.js"></script>
     </body>
